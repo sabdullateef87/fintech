@@ -1,6 +1,6 @@
-const userRepo = require("./mongoDB/repo");
+const UserRepo = require("./mongoDB/repo");
 const userModel = require("../model/userModel");
 
-const newUserRepoInstance = new userRepo(userModel);
+const UserRepoInstance = new UserRepo(userModel);
 // console.log(typeof newUserRepoInstance.addUser);
-module.exports = newUserRepoInstance;
+module.exports = UserRepoInstance;

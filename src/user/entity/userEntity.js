@@ -1,4 +1,4 @@
-class buildMakeUser {
+class UserBuild {
   constructor() {}
   makeUser = ({
     firstname,
@@ -33,4 +33,4 @@ class buildMakeUser {
   };
 }
 
-module.exports = buildMakeUser;
+module.exports = UserBuild;

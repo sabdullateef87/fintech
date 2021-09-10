@@ -1,4 +1,4 @@
-class userRepository {
+class UserRepo {
   constructor(UserModel) {
     this.UserModel = UserModel;
   }
@@ -19,4 +19,4 @@ class userRepository {
     return newUser;
   };
 }
-module.exports = userRepository;
+module.exports = UserRepo;
