@@ -1,8 +1,10 @@
 class UserRepo {
-  constructor(UserModel) {
+  constructor(UserModel, ConnectDB) {
     this.UserModel = UserModel;
+    this.ConnectDB = ConnectDB;
   }
   addUser = async (userInfo) => {
+    await this.ConnectDB();
     const { firstname, lastname, email, password } = userInfo;
     const isExist = await this.UserModel.findOne({ email });
     if (isExist) {
