@@ -1,7 +1,9 @@
+const UserRepoInstance = require("./../data-access");
 // import makeRegisterUser from "./register-user";
 // import userRepo from "./../data-access";
-const makeAddUser = require("./register-user");
-const UserRepoInstance = require("./../data-access");
-const addUser = makeAddUser({ UserRepoInstance });
+const addUser = require("./registerUser")({ UserRepoInstance });
+const addBeneficiary = require("./addBeneficiary")({ UserRepoInstance });
+const addBank = require("./addBank")({ UserRepoInstance });
+const sendMoney = require("./sendMoney")({ UserRepoInstance });
 
-module.exports = { addUser };
+module.exports = { addUser, addBeneficiary, addBank, sendMoney };

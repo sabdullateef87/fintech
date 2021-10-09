@@ -8,6 +8,7 @@ class UserBuild {
     email,
     bankAccounts = [],
     beneficiaries = [],
+    balance = 0,
   }) => {
     if (!firstname) {
       throw new Error("User must have a firstname");
@@ -29,6 +30,7 @@ class UserBuild {
       getBankAccount: () => bankAccounts,
       getPassword: () => password,
       getHashedPassword: () => hashedPassword,
+      getBalance: () => balance,
     });
   };
 }

@@ -11,6 +11,10 @@ const UserModel = new mongoose.Schema(
       required: [true, "Please enter a name"],
       trim: true,
     },
+    balance: {
+      type: Number,
+      default: 0,
+    },
     email: {
       type: String,
       required: [true, "Please provide an email address"],

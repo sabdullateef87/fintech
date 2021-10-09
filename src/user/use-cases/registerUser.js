@@ -1,5 +1,5 @@
 // import makeUser from "./../entity";
-const makeUserInstance = require("./../entity");
+const makeUserInstance = require("../entity");
 function makeAddUser({ UserRepoInstance }) {
   return async function addUser(userInfo) {
     const user = makeUserInstance.makeUser(userInfo);
